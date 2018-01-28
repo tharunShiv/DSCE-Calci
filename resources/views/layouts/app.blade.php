@@ -10,7 +10,9 @@
     </head>
     <body>
         @include('inc.navbar')
-
+        <div class="container" style="width:75%;margin:auto;margin-top:10px;">
+        @include('inc.messages')
+        </div>
         @yield('content')
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

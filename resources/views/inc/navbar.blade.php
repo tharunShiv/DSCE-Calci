@@ -5,7 +5,7 @@
                    <span style="font-size:16px;color:#DF691A;"> Menu <i class="fa fa-bars" aria-hidden="true"></i> </span>
                        
             </button>
-            <a class="navbar-brand" href="#">DSCE Calci</a>
+            <a class="navbar-brand" href="/">DSCE Calci</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">

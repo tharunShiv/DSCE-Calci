@@ -11,38 +11,26 @@
     </div>
     <div class="container">
         <div class="row" >
-            <div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center;">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-2" style="text-align:center;">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        Course Outcomes
+                        Course Outcomes - Program Outcomes
                     </div>
                     <div class="panel-body">
-                        <p><a href="#">View Course Outcomes</a></p>
-                        <p><a href="#">Edit Course Outcomes</a></p>
-                        <p><a href="#">Add Course Outcomes</a></p>   
+                        <p><a href="viewco">View Course Outcomes</a></p>
+                        <p><a href="addco">Edit Course Outcomes</a></p>
+                        <p><a href="addco">Add Course Outcomes</a></p>   
                     </div>
                     <div class="panel-footer"></div>
                 </div>
             </div>
             
-            <div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center;">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            Program Outcomes
-                        </div>
-                        <div class="panel-body">
-                            <p><a href="#">View Program Outcomes</a></p>
-                            <p><a href="#">Edit Program Outcomes</a></p>
-                            <p><a href="#">Add Program Outcomes</a></p>   
-                        </div>
-                        <div class="panel-footer"></div>
-                    </div>
-            </div>
+            
 
             <div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center;">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
-                                Program Specific Outcomes
+                                Course Outcomes - Program Specific Outcomes
                             </div>
                             <div class="panel-body">
                                 <p><a href="#">View Program Specific Outcomes</a></p>
@@ -53,9 +41,9 @@
                         </div>
             </div>
         </div>
-        <footer>
+        <!--<footer>
             <p>Website created and designed by <em>Tharun K</em></p>
-        </footer>
+        </footer> -->
     </div>
     
 @endsection

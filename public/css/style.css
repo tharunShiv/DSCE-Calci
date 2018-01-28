@@ -42,3 +42,12 @@ footer{
     padding:5px;
  
 }
+
+th {
+    text-align: center;
+}
+
+.coaddtable {
+    
+    margin-bottom:5%;
+}
