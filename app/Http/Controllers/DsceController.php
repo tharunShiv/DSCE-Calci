@@ -20,18 +20,7 @@ class DsceController extends Controller
         return view('pages.viewco1')->with('subjects', $dsce); 
     }
 
-    public function addpso(Request $request)
-    {
-        $title = $request->input('title');
-        $dsce = Dsce::where('title', $title)->get();
-        if($dsce->isEmpty()){
-        
-        } else {
-        //when we use get(), it is a collection, so youve to iterate over it or use zero index
-        return view('pages.viewco1')->with('subjects', $dsce);
-        }
-    }
-
+   
     public function index()
     {
         //

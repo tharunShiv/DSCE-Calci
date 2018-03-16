@@ -19,14 +19,29 @@ Route::get('/addco', function(){
     return view('pages.addco');
 });
 
+/*
 Route::get('/addco1', function(){
     return view('pages.addco2');
 });
-
+*/
 Route::get('/viewco', function(){
     return view('pages.viewco');
 });
 
-Route::post('/viewco1', 'DsceController@viewco');
 
+Route::get('/addpso', function(){
+    return view('pages.addpso');
+});
+/*
+Route::get('/addpso1', function(){
+    return view('pages.addpso2');
+});
+*/
+Route::get('/viewpso', function(){
+    return view('pages.viewpso');
+});
+
+Route::post('/viewco1', 'DsceController@viewco');
+Route::post('/viewpso1', 'Dsce1Controller@viewpso');
 Route::resource('dsces', 'DsceController');
+Route::resource('dsce1s', 'Dsce1Controller');

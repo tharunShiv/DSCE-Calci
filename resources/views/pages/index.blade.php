@@ -33,9 +33,9 @@
                                 Course Outcomes - Program Specific Outcomes
                             </div>
                             <div class="panel-body">
-                                <p><a href="#">View Program Specific Outcomes</a></p>
-                                <p><a href="#">Edit Program Specific Outcomes</a></p>
-                                <p><a href="#">Add Program Specific Outcomes</a></p>   
+                                <p><a href="viewpso">View Program Specific Outcomes</a></p>
+                                <p><a href="addpso">Edit Program Specific Outcomes</a></p>
+                                <p><a href="addpso">Add Program Specific Outcomes</a></p>   
                             </div>
                             <div class="panel-footer"></div>
                         </div>
