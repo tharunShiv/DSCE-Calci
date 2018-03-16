@@ -32,6 +32,10 @@ Route::get('/viewco', function(){
 Route::get('/addpso', function(){
     return view('pages.addpso');
 });
+
+Route::get('/addstud', function(){
+   return view('pages.addstud');
+});
 /*
 Route::get('/addpso1', function(){
     return view('pages.addpso2');
@@ -43,5 +47,6 @@ Route::get('/viewpso', function(){
 
 Route::post('/viewco1', 'DsceController@viewco');
 Route::post('/viewpso1', 'Dsce1Controller@viewpso');
+
 Route::resource('dsces', 'DsceController');
 Route::resource('dsce1s', 'Dsce1Controller');
