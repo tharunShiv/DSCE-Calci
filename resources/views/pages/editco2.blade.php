@@ -5,7 +5,7 @@
 <div class="container coaddtable">
     @foreach($subjects as $subject)
     <h3 style="text-align:center;">Edit the Respective Course Outcomes of {{$subject->title}}</h3>
-    <p>Don't use any special characters, leave it blank for NULL values or use 0</p>
+    <p>Don't use any special characters, use 0 for null values</p>
     <br/>
         {!! Form::open(['action' => ['DsceController@update', $subject->id], 'method' => 'POST']) !!}
         {{Form::text('title', $subject->title, ['class'=>'form-control', 'readonly'])}}
@@ -117,18 +117,18 @@
             </tr>
             <tr>
                 <th>Modal*</th>
-                <td>{{Form::text('m1', $subject->m1, ['class' => 'form-control'])}}</td>
-                <td>{{Form::text('m2', $subject->m2, ['class' => 'form-control'])}}</td>
-                <td>{{Form::text('m3', $subject->m3, ['class' => 'form-control'])}}</td>
-                <td>{{Form::text('m4', $subject->m4, ['class' => 'form-control'])}}</td>
-                <td>{{Form::text('m5', $subject->m5, ['class' => 'form-control'])}}</td>
-                <td>{{Form::text('m6', $subject->m6, ['class' => 'form-control'])}}</td>
-                <td>{{Form::text('m7', $subject->m7, ['class' => 'form-control'])}}</td>
-                <td>{{Form::text('m8', $subject->m8, ['class' => 'form-control'])}}</td>
-                <td>{{Form::text('m9', $subject->m9, ['class' => 'form-control'])}}</td>
-                <td>{{Form::text('m10', $subject->m10, ['class' => 'form-control'])}}</td>
-                <td>{{Form::text('m11', $subject->m11, ['class' => 'form-control'])}}</td>
-                <td>{{Form::text('m12', $subject->m12, ['class' => 'form-control'])}}</td>
+                <td>{{Form::text('m1', $subject->m1, ['class' => 'form-control', 'readonly'])}}</td>
+                <td>{{Form::text('m2', $subject->m2, ['class' => 'form-control', 'readonly'])}}</td>
+                <td>{{Form::text('m3', $subject->m3, ['class' => 'form-control', 'readonly'])}}</td>
+                <td>{{Form::text('m4', $subject->m4, ['class' => 'form-control', 'readonly'])}}</td>
+                <td>{{Form::text('m5', $subject->m5, ['class' => 'form-control', 'readonly'])}}</td>
+                <td>{{Form::text('m6', $subject->m6, ['class' => 'form-control', 'readonly'])}}</td>
+                <td>{{Form::text('m7', $subject->m7, ['class' => 'form-control', 'readonly'])}}</td>
+                <td>{{Form::text('m8', $subject->m8, ['class' => 'form-control', 'readonly'])}}</td>
+                <td>{{Form::text('m9', $subject->m9, ['class' => 'form-control', 'readonly'])}}</td>
+                <td>{{Form::text('m10', $subject->m10, ['class' => 'form-control', 'readonly'])}}</td>
+                <td>{{Form::text('m11', $subject->m11, ['class' => 'form-control', 'readonly'])}}</td>
+                <td>{{Form::text('m12', $subject->m12, ['class' => 'form-control', 'readonly'])}}</td>
             </tr>
         </table>
         <small>Modal is the maximum frequency of occurence in a particular column.</small>

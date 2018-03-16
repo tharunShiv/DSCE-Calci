@@ -4,7 +4,7 @@
 
 <div class="container coaddtable">
     <h3 style="text-align:center;">Edit the Respective Course Outcomes of {{$subject->title}}</h3>
-    <p>Don't use any special characters, leave it blank for NULL values or use 0</p>
+    <p>Don't use any special characters,use 0 for null values</p>
     <br/>
         {!! Form::open(['action' => ['DsceController@update', $subject->id], 'method' => 'POST']) !!}
         {{Form::text('title', $subject->title, ['class'=>'form-control', 'readonly'])}}
@@ -101,18 +101,18 @@
             </tr>
             <tr>
                 <th>CO.6</th>
-                <td>{{Form::text('five1', $subject->five1, ['class' => 'form-control', 'required' => 'required'])}}</td>
-                <td>{{Form::text('five2', $subject->five2, ['class' => 'form-control', 'required' => 'required'])}}</td>
-                <td>{{Form::text('five3', $subject->five3, ['class' => 'form-control', 'required' => 'required'])}}</td>
-                <td>{{Form::text('five4', $subject->five4, ['class' => 'form-control', 'required' => 'required'])}}</td>
-                <td>{{Form::text('five5', $subject->five5, ['class' => 'form-control', 'required' => 'required'])}}</td>
-                <td>{{Form::text('five6', $subject->five6, ['class' => 'form-control', 'required' => 'required'])}}</td>
-                <td>{{Form::text('five7', $subject->five7, ['class' => 'form-control', 'required' => 'required'])}}</td>
-                <td>{{Form::text('five8', $subject->five8, ['class' => 'form-control', 'required' => 'required'])}}</td>
-                <td>{{Form::text('five9', $subject->five9, ['class' => 'form-control', 'required' => 'required'])}}</td>
-                <td>{{Form::text('five10', $subject->five10, ['class' => 'form-control', 'required' => 'required'])}}</td>
-                <td>{{Form::text('five11', $subject->five11, ['class' => 'form-control', 'required' => 'required'])}}</td>
-                <td>{{Form::text('five12', $subject->five12, ['class' => 'form-control', 'required' => 'required'])}}</td>
+                <td>{{Form::text('five1', $subject->five1, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
+                <td>{{Form::text('five2', $subject->five2, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
+                <td>{{Form::text('five3', $subject->five3, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
+                <td>{{Form::text('five4', $subject->five4, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
+                <td>{{Form::text('five5', $subject->five5, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
+                <td>{{Form::text('five6', $subject->five6, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
+                <td>{{Form::text('five7', $subject->five7, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
+                <td>{{Form::text('five8', $subject->five8, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
+                <td>{{Form::text('five9', $subject->five9, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
+                <td>{{Form::text('five10', $subject->five10, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
+                <td>{{Form::text('five11', $subject->five11, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
+                <td>{{Form::text('five12', $subject->five12, ['class' => 'form-control', 'required' => 'required', 'readonly'])}}</td>
             </tr>
             <tr>
                 <th>Modal*</th>
