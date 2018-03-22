@@ -48,7 +48,7 @@
                             <div class="panel-body">
                                 <p><a href="#">View Student Details</a></p>
                                 <p><a href="#">Edit Student Details</a></p>
-                                <p><a href="#">Add Student Details</a></p>
+                                <p><a href="addstud">Add Student Details</a></p>
                             </div>
                             <div class="panel-footer"></div>
                         </div>

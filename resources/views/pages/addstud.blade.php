@@ -19,10 +19,22 @@
       </tr>
 
       <tr>
+        <th class="addstud">Semester</th>
+        <td class="addstud"> {{Form::select('semester', array('1' => '1', '2' => '2','3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8'), ['class' => 'selectpicker', 'required' => 'required'])}}
+            </td>
+      </tr>  
+
+      <tr>
         <th class="addstud">Section</th>
         <td class="addstud"> {{Form::text('section', '', ['class'=>'form-control','required' => 'required', 'placeholder'=>'Section'])}}</td>
       </tr>      
    
+      <tr>
+        <th class="addstud">Subject</th>
+        <td class="addstud"> {{Form::select('title', array('ENGGMATHS' => 'Engg. Maths', 'ENGGPHYSICS' => 'Engg. Physics', 'ENGGCHEM' => 'Engg. Chem', 'ELECM' => 'Ele. of Civil & Engg. Mech', 'PROGC' => 'Prog. in & Data Struc.'), ['class' => 'dropdown', 'required' => 'required'])}}
+            </td>
+      </tr>
+
       <tr>
         <th class="addstud">CIE1</th>
         <td class="addstud">{{Form::text('aat1ia1', '', ['class'=>'form-control','required' => 'required', 'placeholder' => 'aat1'])}}<td>
