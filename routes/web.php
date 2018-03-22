@@ -50,3 +50,4 @@ Route::post('/viewpso1', 'Dsce1Controller@viewpso');
 
 Route::resource('dsces', 'DsceController');
 Route::resource('dsce1s', 'Dsce1Controller');
+Route::resource('dscestud', 'DsceStud');
