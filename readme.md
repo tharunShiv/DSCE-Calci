@@ -1,5 +1,56 @@
 ## About this project
+  It is built initially for the CSE Department of DSCE, to enter and store the Course Outcomes and Program Specific Outcomes od their individual courses and perform the required calculations. It also holds the student database and insights about the department for the purpose of the department.
+  
 
+## How to Install this project?
+Its a Laravel Project.
+
+1. Download/Clone this repository
+2. Download the XAMPP
+3. Go to xampp folder, `xampp/apache/conf/extra/httpd-vhosts.conf`
+4. Open it as Administrator
+5. Add this <br/>
+   '`<VirtualHost *:80> `<br/>`
+    DocumentRoot "C:/xampp/htdocs/DSCE-Calci/public" `<br>`
+    ServerName dsceapp.dev `<br>`
+   </VirtualHost>`'<br>
+6. Save and Close
+7. Open Notepad as <b>admin</b>
+   Now from Notepad, hit on `Open` and navigate to `C:\Windows\System32\drivers\etc\hosts`
+8. paste this in the last
+   `
+   127.0.0.1 dsceapp.dev
+   `
+9. Now paste the dowloaded and extracted dsceFM folder into htdocs folder of the xampp folder.
+
+### We're almost done
+1. Now open the project-folder with Visual Studio Code (or any of your favourite text editor)
+2. Open the terminal in that folder also
+3. Run these commands one by one
+`
+composer install
+`<br>
+`
+php artisan storage:link
+`<br>
+`
+php artisan key generate
+`
+4. Now create a .env file and copy paste the model .env file into the new one.
+(Now you would know the variables that should be updated, also update the database name)
+5. Open phpmyadmin and create the database.
+6. At the terminal
+`
+php artisan migrate
+`
+7. Open Your Browser - Mostly Internet Explorer (because of the https issue) - Goto dsceapp.dev
+
+## You're done
+
+## Remember to Pull Requests, report issues, contact me for further clarifications.
+### Programming is the solution
+
+## The technology used:
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
@@ -35,6 +86,7 @@ We would like to extend our thanks to the following sponsors for helping fund on
 
 - **[Vehikl](https://vehikl.com/)**
 - **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
 - **[British Software Development](https://www.britishsoftware.co)**
 - [Fragrantica](https://www.fragrantica.com)
 - [SOFTonSOFA](https://softonsofa.com/)
