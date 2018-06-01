@@ -1,6 +1,10 @@
 ## About this project
   It is built initially for the CSE Department of DSCE, to enter and store the Course Outcomes and Program Specific Outcomes od their individual courses and perform the required calculations. It also holds the student database and insights about the department for the purpose of the department.
-  
+  ### Features :
+  1. Add CO - Edit CO - View CO
+  2. Add PSO - Edit PSO - View PSO
+  3. Add Student information 
+  All of these available subject vice.
 
 ## How to Install this project?
 Its a Laravel Project.
